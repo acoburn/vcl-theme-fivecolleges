@@ -72,7 +72,7 @@
   {{/management}}
   {{#reporting}}
             <li class="dropdown {{selected}}">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-edit"></i> Management</a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bar-chart"></i> Reporting</a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="Reporting Menu">
     {{#items}}
                 <li><a href="{{url}}">{{label}}</a></li>
