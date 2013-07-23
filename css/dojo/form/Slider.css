@@ -1,0 +1,147 @@
+.fivecolleges .dijitSliderProgressBarH {
+	border-color: #aab0bb;
+	background: #c0c2c5 url("../images/sliderFull.png") repeat-x top left;
+}
+
+.fivecolleges .dijitSliderProgressBarV {
+	border-color: #aab0bb;
+	background: #c0c2c5 url("../images/sliderFullVertical.png") repeat-y bottom left;
+}
+
+.fivecolleges .dijitSliderFocused .dijitSliderProgressBarH,
+.fivecolleges .dijitSliderFocused .dijitSliderLeftBumper {
+	background-image:url("../images/sliderFullFocus.png");
+}
+
+.fivecolleges .dijitSliderFocused .dijitSliderProgressBarV,
+.fivecolleges .dijitSliderFocused .dijitSliderBottomBumper {
+	background-image:url("../images/sliderFullVerticalFocus.png");
+}
+
+.fivecolleges .dijitSliderRemainingBarV {
+	border-color: #b4b4b4;
+	background: #dcdcdc url("../images/sliderEmptyVertical.png") repeat-y bottom left;
+}
+
+.fivecolleges .dijitSliderRemainingBarH {
+	border-color: #b4b4b4;
+	background: #dcdcdc url("../images/sliderEmpty.png") repeat-x top left;
+}
+
+.fivecolleges .dijitSliderBar {
+	border-style: solid;
+	outline:1px;
+}
+.fivecolleges .dijitSliderFocused .dijitSliderBar {
+	border-color:#888;
+}
+
+.fivecolleges .dijitSliderImageHandleH {
+	border:0;
+	width:16px;
+	height:16px;
+	background:url("../images/preciseSliderThumb.png") no-repeat center top;
+}
+.fivecolleges .dijitSliderFocused .dijitSliderImageHandleH {
+	background-image:url("../images/preciseSliderThumbFocus.png");
+	#background-image:url("../images/preciseSliderThumbFocus.gif");
+}
+
+.dj_ie6 .fivecolleges .dijitSliderImageHandleH {
+	background-image:url("../images/preciseSliderThumb.gif");
+}
+
+.fivecolleges .dijitSliderLeftBumper {
+	border-left-width: 1px;
+	border-color: #aab0bb;
+	background: #c0c2c5 url("../images/sliderFull.png") repeat-x top left;
+}
+
+.fivecolleges .dijitSliderRightBumper {
+	background: #dcdcdc url("../images/sliderEmpty.png") repeat-x top left;
+	border-color: #b4b4b4;
+	border-right-width: 1px;
+}
+
+.fivecolleges .dijitSliderImageHandleV {
+	border:0;
+	width:16px;
+	height:16px;
+	background:url("../images/sliderThumb.png") no-repeat center center;
+}
+
+.fivecolleges .dijitSliderFocused .dijitSliderImageHandleV {
+	background-image:url("../images/sliderThumbFocus.png");
+}
+.dj_ie6 .fivecolleges .dijitSliderFocused .dijitSliderImageHandleV {
+	background-image:url("../images/sliderThumbFocus.gif");
+}
+
+.fivecolleges .dijitSliderBottomBumper {
+	border-bottom-width: 1px;
+	border-color: #aab0bb;
+	background: #c0c2c5 url("../images/sliderFullVertical.png") repeat-y bottom left;
+}
+
+.fivecolleges .dijitSliderTopBumper {
+	background: #dcdcdc url("../images/sliderEmptyVertical.png") repeat-y top left;
+	border-color: #b4b4b4;
+	border-top-width: 1px;
+}
+
+.fivecolleges .dijitSliderDecrementIconH,
+.fivecolleges .dijitSliderDecrementIconV,
+.fivecolleges .dijitSliderIncrementIconH,
+.fivecolleges .dijitSliderIncrementIconV {
+	background-image: url('../images/spriteArrows.png');
+	background-repeat: no-repeat;
+	margin: 5px;
+	height: 7px;
+	width: 7px;
+	font-size: 1px;
+}
+.dj_ie6 .fivecolleges .dijitSliderDecrementIconH,
+.dj_ie6 .fivecolleges .dijitSliderDecrementIconV,
+.dj_ie6 .fivecolleges .dijitSliderIncrementIconH,
+.dj_ie6 .fivecolleges .dijitSliderIncrementIconV {
+	background-image: url('../images/spriteArrows.gif');
+}
+
+.fivecolleges .dijitSliderDecrementIconH {
+	background-position: -7px 0;
+}
+.fivecolleges .dijitSliderIncrementIconH {
+	background-position: -14px 0;
+}
+.fivecolleges .dijitSliderDecrementIconV {
+	background-position: 0 0;
+}
+.fivecolleges .dijitSliderIncrementIconV {
+	background-position: -21px 0;
+}
+
+.fivecolleges .dijitSliderButtonInner {
+	visibility:hidden;
+}
+
+.fivecolleges .dijitSliderReadOnly *,
+.fivecolleges .dijitSliderDisabled * {
+	border-color: #d5d5d5 #bdbdbd #bdbdbd #d5d5d5;
+	color: #bdbdbd;
+}
+.fivecolleges .dijitSliderReadOnly .dijitSliderDecrementIconH,
+.fivecolleges .dijitSliderDisabled .dijitSliderDecrementIconH {
+	background-position: -35px 0;
+}
+.fivecolleges .dijitSliderReadOnly .dijitSliderIncrementIconH,
+.fivecolleges .dijitSliderDisabled .dijitSliderIncrementIconH {
+	background-position: -42px 0;
+}
+.fivecolleges .dijitSliderReadOnly .dijitSliderDecrementIconV,
+.fivecolleges .dijitSliderDisabled .dijitSliderDecrementIconV {
+	background-position: -28px 0;
+}
+.fivecolleges .dijitSliderReadOnly .dijitSliderIncrementIconV,
+.fivecolleges .dijitSliderDisabled .dijitSliderIncrementIconV {
+	background-position: -49px 0;
+}

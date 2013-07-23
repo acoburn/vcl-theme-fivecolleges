@@ -1,0 +1,52 @@
+/* Time Picker */
+.fivecolleges .dijitTimePickerTick,
+.fivecolleges .dijitTimePickerMarker {
+	border-color: #ccc;
+}
+
+.fivecolleges .dijitTimePickerTick {
+	color:white;
+}
+
+.fivecolleges .dijitTimePickerMarker {
+	background:#d3d3d3 url("images/titleBar.png") repeat-x top;
+	color:#293a4b;
+	font-weight: bold;
+}
+
+.fivecolleges .dijitTimePickerItemSelected {
+	color: black;
+	background: #bbc4d0 none;
+}
+
+.fivecolleges .dijitTimePickerItemHover {
+	background: #60a1ea none;
+	color:white;
+}
+
+.fivecolleges .dijitTimePickerItemHover,
+.fivecolleges .dijitTimePickerItemSelected {
+	position: relative;
+	z-index: 10;
+}
+
+.fivecolleges .dijitTimePickerTick .dijitTimePickerItemInner {
+	font-size:0.4em;
+}
+
+.fivecolleges .dijitTimePickerItemHover .dijitTimePickerItemInner,
+.fivecolleges .dijitTimePickerItemSelected .dijitTimePickerItemInner {
+	font-size:1em;
+}
+
+.fivecolleges .dijitTimePickerMarkerHover {
+	border-top: 1px solid #ccc;
+}
+
+.fivecolleges .dijitTimePickerTickHover,
+.fivecolleges .dijitTimePickerTickSelected {
+	margin-top:-0.3em;
+	margin-bottom:-0.3em;
+	border-bottom: none;
+}
+

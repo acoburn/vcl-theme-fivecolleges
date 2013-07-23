@@ -1,0 +1,38 @@
+.fivecolleges .dijitTitlePaneTitle {
+	background: #cccccc;
+	background:#fff url("images/titleBar.png") repeat-x bottom left;
+	border:1px solid #bfbfbf;
+	padding:3px 4px;
+}
+.fivecolleges .dijitTitlePaneTitleHover  {
+	background: #f8fafd url("images/accordionItemHover.gif") bottom repeat-x;
+}
+
+.fivecolleges .dijitTitlePane .dijitArrowNode {
+	background-image: url('images/spriteArrows.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 7px;
+	width: 7px;
+}
+.dj_ie6 .fivecolleges .dijitTitlePane .dijitArrowNode {
+	background-image: url('images/spriteArrows.gif');
+}
+
+.fivecolleges .dijitTitlePane .dijitClosed .dijitArrowNode {
+	background-position: -14px 0;
+}
+
+.fivecolleges .dijitTitlePaneContentOuter {
+	background: #ffffff;
+	border:1px solid #bfbfbf;
+	border-top: 0;
+}
+.fivecolleges .dijitTitlePaneContentInner {
+	padding:10px;
+}
+
+.fivecolleges .dijitTitlePaneTextNode {
+	margin-left: 4px;
+	margin-right: 4px;
+}

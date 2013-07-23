@@ -1,0 +1,33 @@
+/* DnD avatar-specific settings */
+/* For now it uses a default set of rules. Some other DnD classes can be modified as well. */
+.fivecolleges .dojoDndItemBefore {
+	border-top: 2px solid #369;
+}
+
+.fivecolleges .dojoDndItemAfter {
+	border-bottom: 2px solid #369;
+}
+
+.fivecolleges .dojoDndItemOver {
+	cursor:pointer;
+}
+
+.fivecolleges table.dojoDndAvatar { -moz-border-radius: 0; border: 1px solid #ccc; border-collapse: collapse; background-color: #fff; font-size: 75%; color: black;}
+.fivecolleges .dojoDndAvatar td	{ border: none; }
+.fivecolleges .dojoDndAvatar tr	{ border: none; }
+.fivecolleges .dojoDndAvatarHeader td	{ height: 20px; padding: 0 0 0 21px; }
+.fivecolleges .dojoDndAvatarItem td { padding: 2px;}
+.fivecolleges.dojoDndMove .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.fivecolleges.dojoDndCopy .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoCopy.png); background-repeat: no-repeat; background-position: 2px center;}
+.fivecolleges.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.fivecolleges.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndCopy.png); background-repeat: no-repeat; background-position: 2px center;}
+
+.fivecolleges .dijitContentPaneLoading {
+	background:url('images/loading.gif') no-repeat left center;
+	padding-left:25px;
+}
+
+.fivecolleges .dijitContentPaneError {
+	background:url('images/warning.png') no-repeat left center;
+	padding-left:25px;
+}

@@ -1,0 +1,39 @@
+//
+// Accordion
+// --------------------------------------------------
+
+
+// Parent container
+.accordion {
+  margin-bottom: @baseLineHeight;
+}
+
+// Group == heading + body
+.accordion-group {
+  text-align: left;
+  margin-bottom: 0;
+  border: 0;
+}
+.accordion-heading {
+  border-bottom: 0;
+}
+.accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+}
+
+// General toggle styles
+.accordion-toggle {
+  cursor: pointer;
+  padding-left: 15px;
+  background: url("../images/open.gif") no-repeat left center;
+}
+.accordion-toggle.collapsed {
+  background: url("../images/closed.gif") no-repeat left center;
+}
+
+// Inner needs the styles because you can't animate properly with any styles on the element
+.accordion-inner {
+  padding: 9px 15px;
+  border: 0;
+}

@@ -1,0 +1,335 @@
+/* Tabs, shared classes */
+.fivecolleges .dijitTabPaneWrapper {
+	background:#fff;
+	border:1px solid #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.fivecolleges .dijitTab {
+	line-height:normal;
+	margin-right:4px;	/* space between one tab and the next in top/bottom mode */
+	padding:0;
+	border:1px solid #ccc;
+	background:#e2e2e2 url("../images/tabEnabled.png") repeat-x;
+}
+
+.fivecolleges .dijitTabInnerDiv {
+	padding:2px 8px 2px 9px;
+}
+
+.fivecolleges .dijitTabSpacer {
+	display: none;
+}
+
+.fivecolleges .dijitTabContainer .tabStripRBtn {
+	margin-right: 20px;
+}
+.fivecolleges .dijitTabContainer .tabStripLBtn {
+	margin-left: 20px;
+}
+
+.fivecolleges .nowrapTabStrip .dijitTab {
+	top: 2px;
+}
+.fivecolleges .dijitTabContainerBottom .nowrapTabStrip .dijitTab {
+	top: 0;
+	bottom: 2px;
+}
+
+/* checked tab*/
+.fivecolleges .dijitTabChecked {
+	/* the selected tab (with or without hover) */
+	background-color:#fff;
+	border-color: #ccc;
+	background-image:none;
+}
+
+/* hovered tab */
+.fivecolleges .dijitTabHover {
+	color: #243C5F;
+	border-top-color:#92a0b3;
+	border-left-color:#92a0b3;
+	border-right-color:#92a0b3;
+	border-bottom-color:#92a0b3;
+	background:#e2e2e2 url("../images/tabHover.gif") repeat-x;
+}
+
+.fivecolleges .dijitTabContainerTop .dijitTabHover {
+	border-bottom-color:#ccc;
+}
+
+.fivecolleges .dijitTabContainerBottom .dijitTabHover {
+	border-top-color:#ccc;
+}
+
+.fivecolleges .dijitTabContainerLeft .dijitTabHover {
+	border-right-color:#ccc;
+}
+
+.fivecolleges .dijitTabContainerRight .dijitTabHover {
+	border-left-color:#ccc;
+}
+
+.fivecolleges .dijitTabContainer .dijitTabCheckedHover {
+	color: inherit;
+	border:1px solid #ccc;
+	background:#fff;
+}
+
+.fivecolleges .dijitTab .tabLabel {
+	/* make sure tabs w/close button and w/out close button are same height, even w/small (<12px) font */
+	min-height: 12px;
+	display: inline-block;
+}
+
+/* Nested Tabs */
+
+.fivecolleges .dijitTabContainerNested .dijitTabListWrapper {
+	height: auto;
+}
+
+.fivecolleges .dijitTabContainerNested .dijitTabContainerTop-tabs {
+	border-bottom: 1px solid #CCC;
+}
+
+.fivecolleges .dijitTabContainerTabListNested .dijitTab {
+	background: none;
+	border: none;
+	top: 0;		/* to override top: 1px/-1px for normal tabs */
+}
+.fivecolleges .dijitTabContainerTabListNested .dijitTab .dijitTabContent {
+}
+.fivecolleges .dijitTabContainerTabListNested .dijitTabHover .dijitTabContent .tabLabel {
+	text-decoration: underline;
+}
+.fivecolleges .dijitTabContainerTabListNested .dijitTabChecked .dijitTabContent .tabLabel {
+	text-decoration: underline;
+	font-weight: bold;
+	/*background:#f3f3f3;*/
+}
+.fivecolleges .dijitTabContainer .dijitTabPaneWrapperNested {
+	border: none;	/* prevent double border */
+}
+
+/* Close button */
+
+.fivecolleges .dijitTabCloseButton {
+	background: url("../images/tabClose.png") no-repeat right top;
+	width: 12px;
+	height: 12px;
+}
+.dj_ie6 .fivecolleges .dijitTabCloseButton {
+	background-image : url("../images/tabClose.gif");
+}
+
+.fivecolleges .dijitTabCloseButtonHover {
+	background-image : url("../images/tabCloseHover.png");
+}
+.dj_ie6 .fivecolleges .dijitTabCloseButtonHover {
+	background-image : url("../images/tabCloseHover.gif");
+}
+
+/* ================================ */
+/* top tabs */
+
+.fivecolleges .dijitTabContainerTop-tabs {
+	margin-bottom: 0;
+	border-color: #cccccc;
+	padding-left: 3px;
+	background-position: bottom;
+}
+.fivecolleges .dijitTabContainerTop-tabs .dijitTab {
+	top: 0;
+	margin-bottom: -1px;
+}
+
+/* top container */
+.fivecolleges .dijitTabContainerTop-container {
+	border-top: none;
+}
+
+/* checked tabs */
+.fivecolleges .dijitTabContainerTop-tabs .dijitTabChecked {
+	border-bottom-color:white;
+}
+
+.fivecolleges .dijitTabContainerTop-tabs,
+.fivecolleges .dijitTabContainerBottom-tabs {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+/* strip */
+.fivecolleges .dijitTabContainerTopStrip {
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	padding-top: 2px;
+	background: #f2f2f2;
+}
+
+.fivecolleges .dijitTabContainerTopNone {
+	padding-top: 0;
+}
+
+
+/* ================================ */
+/* bottom tabs */
+.fivecolleges .dijitTabContainerBottom-tabs {
+	margin-top: 0;
+	border-color: #cccccc;
+	background-position: top;
+	padding-left: 3px;
+}
+.fivecolleges .dijitTabContainerBottom-tabs .dijitTab {
+	bottom: 0;
+	margin-top: -1px;
+}
+
+/* bottom container */
+.fivecolleges .dijitTabContainerBottom-container {
+	border-bottom: none;
+}
+
+/* checked tabs */
+.fivecolleges .dijitTabContainerBottom-tabs .dijitTabChecked {
+	border-top-color:white;
+}
+
+/* strip */
+.fivecolleges .dijitTabContainerBottomStrip {
+	padding-bottom: 2px;
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	border-top: none;
+}
+
+/* ================================ */
+/* right tabs */
+.fivecolleges .dijitTabContainerRight-tabs {
+	border-color: #ccc;
+	height: 100%;
+	padding-top: 3px;
+}
+
+.fivecolleges .dijitTabContainerRightStrip {
+	margin-left: -1px;
+}
+
+/* right container */
+.fivecolleges .dijitTabContainerRight-container {
+	border-right: none;
+}
+
+/* checked tabs */
+.fivecolleges .dijitTabContainerRight-tabs .dijitTabChecked {
+	border-left-color:white;
+}
+
+/* strip */
+.fivecolleges .dijitTabContainerRightStrip {
+	padding-right: 2px;
+	border: 1px solid #ccc;
+}
+
+.fivecolleges .dijitTabContainerRightStrip {
+	background: #f2f2f2;
+}
+
+/* ================================ */
+/* left tabs */
+.fivecolleges .dijitTabContainerLeft-tabs {
+	border-color: #ccc;
+	padding-top: 3px;
+	height: 100%;
+}
+
+/* left conatiner */
+.fivecolleges .dijitTabContainerLeft-container {
+	border-left: none;
+}
+
+/* checked tabs */
+.fivecolleges .dijitTabContainerLeft-tabs .dijitTabChecked {
+	border-right-color:white;
+}
+
+/* strip */
+.fivecolleges .dijitTabContainerLeftStrip {
+	padding-left: 2px;
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	border-right: none;
+}
+
+/* ================================ */
+/* left/right tabs */
+.fivecolleges .dijitTabContainerLeft-tabs .dijitTab,
+.fivecolleges .dijitTabContainerRight-tabs .dijitTab {
+	margin-right:0;
+	margin-bottom:4px;	/* space between one tab and the next in left/right mode */
+}
+
+/* ================================ */
+
+/* this resets the tabcontainer stripe when within a contentpane */
+.fivecolleges .dijitTabContainerTop-dijitContentPane .dijitTabContainerTop-tabs {
+	border-left: 0 solid #ccc;
+	border-top: 0 solid #ccc;
+	border-right: 0 solid #ccc;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+/* ================================ */
+
+/* Menu and slider control styles */
+.fivecolleges .dijitTabContainer .tabStripButton {
+	margin-right: 0;
+	padding-top: 2px;
+	z-index: 12;
+}
+
+.fivecolleges .dijitTabContainerBottom .tabStripButton {
+	padding-top: 2px;
+}
+
+.fivecolleges .tabStrip-disabled .tabStripButton .dijitTabInnerDiv {
+	padding-bottom: 3px;
+	padding-top: 1px;
+}
+
+.fivecolleges .tabStripButton .dijitTabInnerDiv {
+	padding: 3px 2px 4px 2px;
+}
+
+.dj_ie6 .fivecolleges .tabStripButton .dijitTabInnerDiv,
+.dj_ie7 .fivecolleges .tabStripButton .dijitTabInnerDiv,
+.dj_opera .fivecolleges .tabStripButton .dijitTabInnerDiv {
+	padding-bottom: 5px;
+}
+.dj_ie6 .fivecolleges .tabStrip-disabled .tabStripButton .dijitTabInnerDiv,
+.dj_ie7 .fivecolleges .tabStrip-disabled .tabStripButton .dijitTabInnerDiv,
+.dj_opera .fivecolleges .tabStrip-disabled .tabStripButton .dijitTabInnerDiv {
+	padding-bottom: 4px;
+}
+
+.fivecolleges .dijitTabStripIcon {
+	height: 14px;
+	width: 14px;
+	background: url(../images/spriteRoundedIconsSmall.png) no-repeat left top ;
+}
+
+.dj_ie6 .fivecolleges .dijitTabStripIcon {
+	background-image: url(../images/spriteRoundedIconsSmall.gif);
+}
+
+.fivecolleges .dijitTabStripSlideRightIcon {
+	background-position: -30px top;
+}
+
+.fivecolleges .dijitTabStripMenuIcon {
+	background-position: -15px top;
+}
+

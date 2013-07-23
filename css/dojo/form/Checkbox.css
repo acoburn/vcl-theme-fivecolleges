@@ -1,0 +1,54 @@
+.fivecolleges .dijitToggleButton .dijitCheckBoxIcon {
+	background-image: url('../images/checkmarkNoBorder.png');
+}
+
+.dj_ie6 .fivecolleges .dijitToggleButton .dijitCheckBoxIcon {
+	background-image: url('../images/checkmarkNoBorder.gif');
+}
+
+.fivecolleges .dijitCheckBox,
+.fivecolleges .dijitCheckBoxIcon		/* inside a toggle button */	{
+	background-image: url('../images/checkmark.png'); /* checkbox sprite image */
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0 2px 0 0;
+	padding: 0;
+}
+
+.dj_ie6 .fivecolleges .dijitCheckBox,
+.dj_ie6 .fivecolleges .dijitCheckBoxIcon		/* inside a toggle button */	{
+	background-image: url('../images/checkmark.gif'); /* checkbox sprite image */
+}
+
+.fivecolleges .dijitCheckBox,
+.fivecolleges .dijitToggleButton .dijitCheckBoxIcon {
+	/* unchecked */
+	background-position: -16px;
+}
+
+.fivecolleges .dijitCheckBoxChecked,
+.fivecolleges .dijitToggleButtonChecked .dijitCheckBoxIcon {
+	/* checked */
+	background-position: 0;
+}
+
+.fivecolleges .dijitCheckBoxDisabled {
+	/* disabled */
+	background-position: -48px;
+}
+
+.fivecolleges .dijitCheckBoxCheckedDisabled {
+	/* disabled but checked */
+	background-position: -32px;
+}
+
+.fivecolleges .dijitCheckBoxHover {
+	/* hovering over an unchecked enabled checkbox */
+	background-position: -80px;
+}
+
+.fivecolleges .dijitCheckBoxCheckedHover {
+	/* hovering over a checked enabled checkbox */
+	background-position: -64px;
+}

@@ -1,0 +1,57 @@
+.fivecolleges .dijitSelect .dijitButtonNode {
+	padding: 0;
+}
+.fivecolleges .dijitSelect .dijitButtonNode .dijitArrowButtonInner {
+	margin: 0 4px 0 5px;
+}
+
+/* Make unselected content portion "look" more like a text box and less like a button */
+.fivecolleges .dijitSelect .dijitButtonContents {
+	padding-top: 1px;
+	background:#fff url("../images/validationInputBg.png") repeat-x top left;
+	#background:#fff url('../images/validationInputBg.gif') repeat-x top left;
+}
+.fivecolleges .dijitSelectHover .dijitButtonContents,
+.fivecolleges .dijitSelectActive .dijitButtonContents,
+.fivecolleges .dijitSelectOpened .dijitButtonContents,
+.fivecolleges .dijitSelectDisabled .dijitButtonContents,
+.fivecolleges .dijitSelectReadOnly .dijitButtonContents{
+	background: transparent none;
+}
+.dj_ie .fivecolleges .dijitSelect .dijitButtonContents {
+	padding-top: 0;
+}
+
+/* Mirror DropDownButton */
+.fivecolleges .dijitSelectDisabled .dijitButtonNode {
+	border-color: #d5d5d5 #bdbdbd #bdbdbd #d5d5d5;
+	background:#e4e4e4 url("../images/buttonDisabled.png") top repeat-x;
+}
+.dj_ie .fivecolleges .dijitSelectDisabled  .dijitButtonNode * {
+	filter: gray() alpha(opacity=50);
+}
+
+.fivecolleges .dijitSelectHover .dijitButtonNode {
+	border-color:#a5beda;
+	border-bottom-color:#5c7590;
+	border-right-color:#5c7590;
+	color:#243C5F;
+	background:#fcfdff url("../images/buttonHover.png") repeat-x bottom;
+}
+
+.fivecolleges .dijitSelectActive .dijitButtonNode,
+.fivecolleges .dijitSelectOpened .dijitButtonNode {
+	border-color:#366dba;
+	background: #ededed url("../images/buttonActive.png") bottom repeat-x;
+}
+
+/* Make the menu look more combobox-like */
+.fivecolleges .dijitSelectMenu td {
+	padding: 0;
+}
+.fivecolleges .dijitSelectMenu .dijitMenuItemLabel,
+.fivecolleges .dijitSelectMenu .dijitMenuArrowCell {
+	padding: 0.1em 0.2em;
+}
+
+

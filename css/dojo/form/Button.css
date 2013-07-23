@@ -1,0 +1,136 @@
+
+/*****
+		dijit.form.Button
+		dijit.form.DropDownButton
+		dijit.form.ComboButton
+		dijit.form.ComboBox (partial)
+		dijit.form.Spinner (partial) (TODO: create NumberSpinner.css file like claro has)
+ *****/
+
+.fivecolleges .dijitButtonNode {
+	/* enabled state - inner */
+	border: 1px solid #c0c0c0;
+	border-bottom: 1px solid #9b9b9b;
+	padding: 0.1em 0.2em 0.2em 0.2em;
+	background: #fff url("../images/buttonEnabled.png") repeat-x bottom left;
+}
+.fivecolleges .dijitButtonText {
+	text-align: center;
+	padding: 0 0.3em;
+}
+
+.fivecolleges .dijitDisabled .dijitButtonText {
+	color: #7F7F7F;
+}
+
+.fivecolleges .dijitArrowButton {
+	color: #111;
+}
+
+.fivecolleges .dijitComboButton .dijitDownArrowButton {
+	padding-right:4px;
+}
+
+.fivecolleges .dijitTextBoxReadOnly,
+.fivecolleges .dijitTextBoxReadOnly .dijitButtonNode,
+.fivecolleges .dijitButtonDisabled .dijitButtonNode,
+.fivecolleges .dijitToggleButtonDisabled .dijitButtonNode,
+.fivecolleges .dijitDropDownButtonDisabled .dijitButtonNode,
+.fivecolleges .dijitComboButtonDisabled .dijitButtonNode,
+.fivecolleges .dijitTextBoxDisabled,
+.fivecolleges .dijitTextBoxDisabled .dijitButtonNode {
+	/* disabled state - inner */
+	border-color: #d5d5d5 #d5d5d5 #bdbdbd #d5d5d5;
+	background:#e4e4e4 url("../images/buttonDisabled.png") top repeat-x;
+}
+
+.fivecolleges .dijitButtonHover .dijitButtonNode,
+.fivecolleges .dijitButtonNodeHover,
+.fivecolleges .dijitToggleButtonHover .dijitButtonNode,
+.fivecolleges .dijitDropDownButtonHover .dijitButtonNode,
+.fivecolleges .dijitComboButton .dijitButtonContentsHover,
+.fivecolleges .dijitComboButton .dijitDownArrowButtonHover {
+	/* hover state - inner */
+	/* TODO: change from Hover to Selected so that button is still highlighted while drop down is being used */
+	border-color: #a5beda;
+	border-bottom-color:#5c7590;
+	color:#243C5F;
+	background:#fcfdff url("../images/buttonHover.png") repeat-x bottom;
+}
+.fivecolleges .dijitDownArrowButtonHover,
+.fivecolleges .dijitUpArrowButtonHover {
+	/* same as above except don't adjust border color (it's controlled by the containing Spinner/ComboBox) */
+	color:#243C5F;
+	background:#fcfdff url("../images/buttonHover.png") repeat-x bottom;
+}
+
+.fivecolleges .dijitUpArrowButtonActive,
+.fivecolleges .dijitDownArrowButtonActive,
+.fivecolleges .dijitButtonActive .dijitButtonNode,
+.fivecolleges .dijitToggleButtonActive .dijitButtonNode,
+.fivecolleges .dijitDropDownButtonActive .dijitButtonNode,
+.fivecolleges .dijitButtonContentsActive,
+.fivecolleges .dijitStackController .dijitToggleButtonChecked .dijitButtonNode {
+	/* active state - inner (for when you are pressing a normal button, or
+	 * when a radio-type button is in a depressed state
+	 */
+	border-color:#366dba;
+	background: #ededed url("../images/buttonActive.png") bottom repeat-x;
+}
+
+.fivecolleges .dijitArrowButtonInner {
+	background:url("../images/spriteArrows.png") no-repeat scroll 0 center;
+	width: 7px;
+	height: 7px;
+	margin: 0 4px 0 4px;
+}
+.fivecolleges .dijitTextBox .dijitArrowButtonInner {
+	background-position: 0 center;
+}
+.dj_ie6 .fivecolleges .dijitArrowButtonInner {
+	background-image:url("../images/spriteArrows.gif");
+}
+.fivecolleges .dijitLeftArrowButton .dijitArrowButtonInner {
+	background-position: -7px center;
+}
+.fivecolleges .dijitRightArrowButton .dijitArrowButtonInner {
+	background-position: -14px center;
+}
+.fivecolleges .dijitUpArrowButton .dijitArrowButtonInner {
+	background-position: -21px center;
+}
+
+.fivecolleges .dijitDisabled .dijitArrowButtonInner {
+	background-position: -28px center;
+}
+.fivecolleges .dijitDisabled .dijitLeftArrowButton .dijitArrowButtonInner {
+	background-position: -35px center;
+}
+.fivecolleges .dijitDisabled .dijitRightArrowButton .dijitArrowButtonInner {
+	background-position: -42px center;
+}
+.fivecolleges .dijitDisabled .dijitUpArrowButton .dijitArrowButtonInner {
+	background-position: -49px center;
+}
+.dj_webkit .fivecolleges .dijitSpinner .dijitUpArrowButton .dijitArrowButtonInner {
+	margin-top: -1px; /* image has too many blank pixels on top */
+}
+.dj_ie .fivecolleges .dijitSpinner .dijitDownArrowButton .dijitArrowButtonInner {
+	margin-top: -2px; /* image has too many blank pixels on top */
+}
+.dj_ie8 .fivecolleges .dijitSpinner .dijitDownArrowButton .dijitArrowButtonInner {
+	margin-top: -1px; /* image has too many blank pixels on top */
+}
+.fivecolleges .dijitSpinnerButtonContainer {
+	width: auto;
+	padding: 0;
+}
+.fivecolleges .dijitSpinner .dijitArrowButton {
+	width: 15px;
+}
+.fivecolleges .dijitSpinner .dijitSpinnerButtonInner {
+	width: 15px;
+}
+.fivecolleges .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	padding: 0;
+}

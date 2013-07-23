@@ -1,0 +1,195 @@
+
+body {
+    background: url(../images/p1.png);
+}
+
+header {
+    border-bottom: 1px solid #666;
+    height: 80px;
+    background: url(../images/p1.png);
+}
+header h1 {
+    margin:8px 2px 15px 2px;
+    padding:10px 0 5px 40px;
+    background:url(/themes/fivecolleges/images/star.png) no-repeat left center;
+}
+header h1 a {
+    color:#11557C;
+    padding:15px 5px;
+}
+
+article {
+    min-height:300px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+article > div,
+fieldset,
+table {
+    margin: 0 auto 10px auto;
+}
+article > div.statgraph {
+    margin:0;
+    width:100%; 
+}
+fieldset {
+    text-align: left;
+}
+table.dojoxGridRowTable td,
+table.dojoxGridRowTable {
+    margin: 0;
+}
+form {
+    text-align: center;
+}
+input.dijitReset {
+    border: 0;
+}
+table td {
+    padding: 4px;
+    text-align: left;
+}
+table th {
+    padding: 4px 6px;
+}
+li {
+    text-align:left;
+}
+input#force {
+    display:none;
+}
+input#force + label {
+    display:none;
+}
+
+footer {
+    text-align:right;
+    padding-bottom: 10px;
+    border-top: 1px solid #666;
+    padding-top: 10px;
+    background: url(../images/p1.png);
+    opacity: .9;
+}
+footer a {
+    padding: 2px 10px;
+}
+
+#privtree {
+    margin-left:200px;
+    text-align:left;
+}
+#layouttable th br,
+#layouttable th img {
+    display: none;
+}
+#menulist > ul > li > a {
+    font-size: 15px;
+    font-weight: bold;
+}
+#menulist > ul > li.selected {
+    background-color: #ccc;
+}
+
+.vcl-osx-instructions,
+input[type="text"].vcl-osx-instructions,
+.vcl-windows-instructions,
+.vcl-linux-instructions {
+    display: none;
+}
+.vcl-institution {
+    padding: 0px;
+    vertical-align: middle;
+}
+.vcl-institution-nohover {
+    padding: 12px 20px;
+}
+.vcl-intro {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.vcl-title-text {
+    font-size:1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.30em;
+    margin-bottom:1.25em;
+    margin-top:1.0em;
+}
+.vcl-setup {
+    width: 450px;
+    margin: 0 auto;
+}
+.vcl-password {
+    font-size: 48px;
+    letter-spacing: .2em;
+    font-weight: bold;
+    text-align: center;
+}
+.whenusefieldset {
+    border: 1px solid #999;
+    width: 400px;
+    margin-bottom:15px;
+    padding: 8px;
+}
+.vcl-connectionmethod {
+    width: 300px;
+    text-align: left;
+    display:inline-block;
+    vertical-align:top;
+    margin: 0 10px;
+    padding:2px 5px;
+}
+.vcl-instructions {
+    margin: 10px 0;
+    border: 1px solid #999;
+    padding: 15px;
+    text-align:left;
+}
+.vcl-setup .vcl-instructions {
+    border: 0;
+    padding: 0;
+    margin: 5px 2px;;
+}
+.dijitTitlePane {
+    text-align:left;
+}
+.dijitTabContainer {
+    text-align:left;
+}
+.vcl-loading {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    text-align:center;
+}
+.vcl-maintenance {
+    color:orange;
+}
+.vcl-failed {
+    color:red;
+    font-weight: bold;
+}
+.vcl-reloading {
+    color: purple;
+}
+.vcl-inuse {
+    color: blue;
+    font-weight: bold;
+}
+.scriptonly {
+    display: inline;
+}
+.dojoxFloatingPane {
+    font-size: 13px;
+}
+#resStatusText table tr td:first-child {
+    text-align: right;
+}
+#resourcegroupcontainer,
+#usergroupcontainer {
+    overflow:auto;
+}

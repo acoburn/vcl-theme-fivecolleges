@@ -1,0 +1,9 @@
+/* Calendar */
+
+.fivecolleges .dijitCalendarRtl .dijitCalendarDecrease {
+	background-position: -30px top;
+}
+
+.fivecolleges .dijitCalendarRtl .dijitCalendarIncrease {
+	background-position: 0 top;
+}

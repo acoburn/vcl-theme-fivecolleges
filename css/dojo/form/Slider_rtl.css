@@ -1,0 +1,31 @@
+.fivecolleges .dijitSliderRtl .dijitSliderProgressBarH,
+.fivecolleges .dijitSliderRtl .dijitSliderRemainingBarH,
+.fivecolleges .dijitSliderRtl .dijitSliderLeftBumper,
+.fivecolleges .dijitSliderRtl .dijitSliderRightBumper,
+.fivecolleges .dijitSliderRtl .dijitSliderTopBumper {
+	background-position: top right;
+}
+
+.fivecolleges .dijitSliderRtl .dijitSliderProgressBarV,
+.fivecolleges .dijitSliderRtl .dijitSliderRemainingBarV,
+.fivecolleges .dijitSliderRtl .dijitSliderBottomBumper {
+	background-position: bottom right;
+}
+
+.fivecolleges .dijitSliderRtl .dijitSliderLeftBumper {
+	border-left-width: 0;
+	border-right-width: 1px;
+}
+
+.fivecolleges .dijitSliderRtl .dijitSliderRightBumper {
+	border-left-width: 1px;
+	border-right-width: 0;
+}
+
+.fivecolleges .dijitSliderRtl .dijitSliderIncrementIconH {
+	background-position: -7px 0;
+}
+
+.fivecolleges .dijitSliderRtl .dijitSliderDecrementIconH {
+	background-position: -14px 0;
+}
