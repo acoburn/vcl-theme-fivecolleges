@@ -31,7 +31,11 @@ require_once("Mustache/Autoloader.php");
 Mustache_Autoloader::register();
 
 function getHeader($refresh) {
-	global $user, $mode, $authed, $locale, $VCLversion;
+    global $user, $mode, $authed, $locale, $VCLversion;
+    $menu_defaults = array(
+        "selected" => "",
+        "count" => 0,
+        "items" => array());
     $data = array(
         "version" => $VCLversion,
         "authed" => $authed,
@@ -44,60 +48,42 @@ function getHeader($refresh) {
         "dojo" => getDojoHTML($refresh),
         "refresh" => $refresh,
         "css" => getExtraCSS(),
-        "help" => HELPURL
+        "help" => HELPURL,
+        "reservation" => $menu_defaults,
+        "management" => $menu_defaults,
+        "reporting" => $menu_defaults
     );
 
-    $menu = getNavMenu(1,1);
-    $items = preg_split("|</li>\s*|", $menu);
-    $menu_items = array();
-    $selected = "";
     $remove = array("HOME", "User Preferences", "Documentation", "Logout");
     $reservation = array("New Reservation", "Current Reservations", "Block Allocations");
     $management = array("Manage Groups", "Manage Images", "Manage Schedules", 
                         "Manage Computers", "Management Nodes", "Server Profiles", "View Time Table",
                         "User Lookup", "Privileges", "Virtual Hosts", "Site Maintenance");
     $reporting = array("Dashboard", "Statistics");
-    $reservation_items = array();
-    $management_items = array();
-    $reporting_items = array();
 
-    $selected = "";
-    foreach ($items as $i) {
+    foreach (preg_split("|</li>\s*|", getNavMenu(1, 1)) as $i) {
         if (preg_match("|href=\"([^\"]+)\"[^>]*>([^<]+)</a>|i", $i, $matches)) {
             if (!in_array($matches[2], $remove)) {
                 if (in_array( $matches[2], $reservation )) {
-                    array_push($reservation_items, array("url" => $matches[1], "label" => $matches[2]));
+                    array_push($data['reservation']['items'], array("url" => $matches[1], "label" => $matches[2]));
+                    $data['reservation']['count']++;
                     if (preg_match("|<li class=[\"']?selected['\"]?|", $i))
-                        $selected = "reservations";
+                        $data['reservation']['selected'] = "selected";
                 } else if (in_array( $matches[2], $reporting )) {
-                    array_push($reporting_items, array("url" => $matches[1], "label" => $matches[2]));
+                    array_push($data['reporting']['items'], array("url" => $matches[1], "label" => $matches[2]));
+                    $data['reporting']['count']++;
                     if (preg_match("|<li class=['\"]?selected['\"]?|", $i))
-                        $selected = "reporting";
+                        $data['reporting']['selected'] = "selected";
                 } else {
-                    array_push($management_items, array("url" => $matches[1], "label" => $matches[2]));
+                    array_push($data['management']['items'], array("url" => $matches[1], "label" => $matches[2]));
+                    $data['management']['count']++;
                     if (preg_match("|<li class=['\"]?selected['\"]?|", $i))
-                        $selected = "management";
+                        $data['management']['selected'] = "selected";
                 }
             }
         }
     }
     
-    if (count($reservation_items)) {
-        $data['reservation'] = array(
-            "selected" => ($selected == "reservations" ? "selected" : ""),
-            "items" => $reservation_items);
-    }
-    if (count($management_items)) {
-        $data['management'] = array(
-            "selected" => ($selected == "management" ? "selected" : ""),
-            "items" => $management_items);
-    }
-    if (count($reporting_items)) {
-        $data['reporting'] = array(
-            "selected" => ($selected == "reporting" ? "selected" : ""),
-            "items" => $reporting_items);
-    }
-
     $m = new Mustache_Engine;
     return $m->render(file_get_contents(dirname(__FILE__) . '/templates/header.tpl'), $data);
 }
