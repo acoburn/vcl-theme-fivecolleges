@@ -50,35 +50,41 @@
         <div id="menulist" class="navbar">
           <ul id="navMenu" class="nav pull-right">
   {{#reservation}}
+    {{#count}}
             <li class="dropdown {{selected}}">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-time"></i> Reservations</a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="Reservations Menu">
-    {{#items}}
+      {{#items}}
                 <li><a href="{{url}}">{{label}}</a></li>
-    {{/items}}
+      {{/items}}
               </ul>
             </li>
+    {{/count}}
   {{/reservation}}
 
   {{#management}}
+    {{#count}}
             <li class="dropdown {{selected}}">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-edit"></i> Management</a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="Management Menu">
-    {{#items}}
+      {{#items}}
                 <li><a href="{{url}}">{{label}}</a></li>
-    {{/items}}
+      {{/items}}
               </ul>
             </li>
+    {{/count}}
   {{/management}}
   {{#reporting}}
+    {{#count}}
             <li class="dropdown {{selected}}">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bar-chart"></i> Reporting</a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="Reporting Menu">
-    {{#items}}
+      {{#items}}
                 <li><a href="{{url}}">{{label}}</a></li>
-    {{/items}}
+      {{/items}}
               </ul>
             </li>
+    {{/count}}
   {{/reporting}}
         </div>
 {{/authed}}
