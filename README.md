@@ -1,7 +1,7 @@
 vcl-theme-fivecolleges
 ======================
 
-A bootstrap-based theme for the Apache VCL project.
+A bootstrap-based theme for the [Apache VCL project](http://vcl.apache.org).
 
 This theme uses [Twitter-Bootstrap](http://twitter.github.io/bootstrap/)
 as a starting point for generating the main CSS files. The *.less files
