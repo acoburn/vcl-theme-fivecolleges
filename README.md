@@ -15,6 +15,14 @@ wish to update affiliations 1, 3 and 4, then use this command:
     UPDATE affiliation SET theme = 'fivecolleges' WHERE id IN (1, 3, 4);
 
 
+Customizing the HTML templates
+------------------------------
+
+All of the template files are located in the `templates` directory, and
+they follow the [Mustache](http://mustache.github.io) way of doing
+things. You will at least want to modify the `footer.tpl` file.
+
+
 Using LDAP
 ----------
 
@@ -32,7 +40,7 @@ following lines will make that control appear:
     }
 
 
-Using Custom Connect Methods
+Using custom connect methods
 ----------------------------
 
 The javascript code expects the "Connect Method" text to be in a particular
@@ -60,9 +68,5 @@ Recess is a node.js module, and it can be installed like so:
 
 All icons are based on those provided by
 [Font-Awesome](http://fortawesome.github.io/Font-Awesome/)
-
-All of the template files are located in the `templates` directory, and
-they follow the [Mustache](http://mustache.github.io) way of doing
-things. You will at least want to modify the `footer.tpl` file.
 
 
