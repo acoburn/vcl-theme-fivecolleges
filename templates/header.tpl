@@ -4,8 +4,8 @@
   <title>Virtual Computing Lab</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="css/vcl.css">
-  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/fivecolleges.min.css">
+  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="themes/{{theme}}/images/icon.png">
   <script src="js/code.js?v={{version}}" type="text/javascript"></script>
 {{#usenls}}
