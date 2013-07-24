@@ -3,10 +3,9 @@
 <head>
   <title>Virtual Computing Lab</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/vcl.css">
-  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/fivecolleges.css">
   <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/fivecolleges.min.css">
   <link rel="icon" type="image/png" href="themes/{{theme}}/images/icon.png">
   <script src="js/code.js?v={{version}}" type="text/javascript"></script>
 {{#usenls}}
@@ -37,14 +36,14 @@
       <h1 class="pull-left"><a href="{{home}}">Virtual Computing Lab</a></h1>
       <nav id="navigation" role="navigation" class="pull-right">
 {{#authed}}
-        <div id="prefs" class="navbar">
+        <div class="navbar vcl-prefs">
           <ul class="nav pull-right">
              <li><a href="index.php?mode=userpreferences"><i class="icon-user"></i> Preferences</a></li>
              <li><a href="{{help}}"><i class="icon-question"></i> Help</a></li>
              <li><a href="index.php?mode=logout"><i class="icon-signout"></i> Logout</a></li>
           </ul>
         </div><br />
-        <div id="menulist" class="navbar">
+        <div class="navbar vcl-menu">
           <ul id="navMenu" class="nav pull-right">
   {{#reservation}}
     {{#count}}

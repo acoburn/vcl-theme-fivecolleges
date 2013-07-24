@@ -1,0 +1,182 @@
+// VCL Specific Elements
+// ---------------------
+
+// Navigation Menu
+// ---------------
+.vcl-menu {
+  > ul {
+    > li {
+      > a {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    > li.selected {
+        background-color: #ccc;
+    }
+  }
+}
+
+
+// Login page
+// ----------
+.vcl-institution {
+    padding: 0px;
+    vertical-align: middle;
+}
+.vcl-institution-nohover {
+    padding: 12px 20px;
+}
+.vcl-intro {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.vcl-title-text {
+    font-size:1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.30em;
+    margin-bottom:1.25em;
+    margin-top:1.0em;
+}
+
+
+// Connection page
+// ---------------
+.vcl-setup {
+    width: 450px;
+    margin: 0 auto;
+    .vcl-instructions {
+        border: 0;
+        padding: 0;
+        margin: 5px 2px;
+    }
+}
+.vcl-password {
+    font-size: 48px;
+    letter-spacing: .2em;
+    font-weight: bold;
+    text-align: center;
+}
+.vcl-connectionmethod {
+    width: 300px;
+    text-align: left;
+    display:inline-block;
+    vertical-align:top;
+    margin: 0 10px;
+    padding:2px 5px;
+}
+.vcl-instructions {
+    margin: 10px 0;
+    border: 1px solid #999;
+    padding: 15px;
+    text-align:left;
+}
+.vcl-osx-instructions,
+input[type="text"].vcl-osx-instructions,
+.vcl-windows-instructions,
+.vcl-linux-instructions {
+    display: none;
+}
+
+// Computer table colors
+// ---------------------
+.vcl-maintenance {
+    color:orange;
+}
+.vcl-failed {
+    color:red;
+    font-weight: bold;
+}
+.vcl-reloading {
+    color: purple;
+}
+.vcl-inuse {
+    color: blue;
+    font-weight: bold;
+}
+
+
+// ASF VCL Overrides
+// -----------------
+
+// Force stat graphs to 100%
+article {
+  > div.statgraph {
+    margin:0;
+    width:100%;
+  }
+}
+
+// Reset the dojox Grid tables
+table.dojoxGridRowTable td,
+table.dojoxGridRowTable {
+    margin: 0;
+}
+input.dijitReset {
+    border: 0;
+}
+
+// Hide the LDAP-specific control
+// from the user-lookup page
+input#force {
+    display:none;
+}
+input#force + label {
+    display:none;
+}
+
+// Push the privtree to the right
+#privtree {
+    margin-left:200px;
+    text-align:left;
+}
+
+// There are some img and br artifacts
+// that just get in the way -- hide them
+#layouttable {
+  th {
+    br,
+    img {
+      display: none;
+    }
+  }
+}
+
+
+.dijitTitlePane {
+    text-align:left;
+}
+.dijitTabContainer {
+    text-align:left;
+}
+
+.scriptonly {
+    display: inline;
+}
+.dojoxFloatingPane {
+    font-size: 13px;
+}
+#resStatusText {
+  table {
+    tr {
+      td:first-child {
+        text-align: right;
+      }
+    }
+  }
+}
+#resourcegroupcontainer,
+#usergroupcontainer {
+    overflow:auto;
+}
+#vmprofiledata {
+  table {
+    tr {
+      td {
+        max-width: 440px;
+        overflow:hidden;
+      }
+    }
+  }
+}

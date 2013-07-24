@@ -13,6 +13,49 @@ body {
   line-height: @baseLineHeight;
   color: @textColor;
   background-color: @bodyBackground;
+  background-image: url(@bodyBackgroundImage);
+}
+
+// Header
+// ------------------------
+
+header {
+  border-bottom: 1px solid @headerBottomBorderColor;
+  height: @headerHeight;
+
+  h1 {
+    margin: 8px 2px 15px 2px;
+    padding: 10px 0 5px 40px;
+    background: url(@headerImage) no-repeat left center;
+
+    a {
+      padding: 15px 5px;
+      color: @headerLinkColor;
+    }
+  }
+}
+
+// Article
+// -------------------------
+article {
+    text-align: center;
+    padding-bottom: 50px;
+}
+article > div {
+    margin: 0 auto 10px auto;
+}
+
+// Footer
+// -------------------------
+footer {
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid @footerTopBorderColor;
+    opacity: .9;
+    background-image: url(@footerBackgroundImage);
+    a {
+        padding-left: 20px;
+    }
 }
 
 
