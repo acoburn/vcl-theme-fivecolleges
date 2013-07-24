@@ -49,6 +49,7 @@ function getHeader($refresh) {
         "refresh" => $refresh,
         "css" => getExtraCSS(),
         "help" => HELPURL,
+        "theme" => basename(dirname(__FILE__)),
         "reservation" => $menu_defaults,
         "management" => $menu_defaults,
         "reporting" => $menu_defaults

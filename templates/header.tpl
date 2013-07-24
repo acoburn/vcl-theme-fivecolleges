@@ -3,17 +3,17 @@
 <head>
   <title>Virtual Computing Lab</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="themes/fivecolleges/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/vcl.css">
-  <link rel="stylesheet" type="text/css" href="themes/fivecolleges/css/fivecolleges.css">
-  <link rel="stylesheet" type="text/css" href="themes/fivecolleges/css/font-awesome.min.css">
-  <link rel="icon\" type=\"image/png\" href="themes/fivecolleges/images/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/fivecolleges.css">
+  <link rel="stylesheet" type="text/css" href="themes/{{theme}}/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="themes/{{theme}}/images/icon.png">
   <script src="js/code.js?v={{version}}" type="text/javascript"></script>
 {{#usenls}}
   <script type="text/javascript" src="js/nls/{{lang}}/messages.js?v={{version}}"></script>
 {{/usenls}}
-  <script src="themes/fivecolleges/js/jquery-1.10.2.min.js" type="text/javascript"></script>
-  <script src="themes/fivecolleges/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="themes/{{theme}}/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="themes/{{theme}}/js/bootstrap.min.js" type="text/javascript"></script>
   <script type="text/javascript">
 	var cookiedomain = '{{cookieDomain}}';
     usenls = false;
@@ -21,7 +21,7 @@
         preferredSize: [{{userWidth}}, {{userHeight}}]
     };
   </script>
-  <script type="text/javascript" src="themes/fivecolleges/js/fivecolleges.js"></script>
+  <script type="text/javascript" src="themes/{{theme}}/js/fivecolleges.js"></script>
   {{{dojo}}}
 {{#refresh}}
     <noscript><META HTTP-EQUIV=REFRESH CONTENT=20></noscript>
@@ -31,9 +31,6 @@
 {{/css}}
 </head>
 <body class="fivecolleges">
-  <script type="text/template" id="vcl-loading-tpl">
-    <div class="vcl-loading"><i class="icon-spinner icon-2x icon-spin"></i></div>
-  </script>
   <a class=hidden href="#content" accesskey=2>Skip to content</a>
   <header role="banner" id="banner">
     <div class="container">
@@ -91,7 +88,7 @@
 {{^authed}}
         <div class="vcl-intro navbar">
           <ul class="nav pull-right">
-            <li><a href="{{help}}"><i class="icon-question-sign"></i> Using the VCL</a></li>
+            <li><a href="{{help}}"><i class="icon-question"></i> Using the VCL</a></li>
           </ul>
         </div>
 {{/authed}}
