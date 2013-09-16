@@ -49,6 +49,7 @@ function getHeader($refresh) {
         "refresh" => $refresh,
         "css" => getExtraCSS(),
         "help" => HELPURL,
+        "helpClass" => (HELPURL == 'https://vcl.fivecolleges.edu/help' ? 'vcl-help' : ''),
         "theme" => basename(dirname(__FILE__)),
         "reservation" => $menu_defaults,
         "management" => $menu_defaults,
@@ -62,24 +63,26 @@ function getHeader($refresh) {
                         "User Lookup", "Privileges", "Virtual Hosts", "Site Maintenance");
     $reporting = array("Dashboard", "Statistics");
 
-    foreach (preg_split("|</li>\s*|", getNavMenu(1, 1)) as $i) {
-        if (preg_match("|href=\"([^\"]+)\"[^>]*>([^<]+)</a>|i", $i, $matches)) {
-            if (!in_array($matches[2], $remove)) {
-                if (in_array( $matches[2], $reservation )) {
-                    array_push($data['reservation']['items'], array("url" => $matches[1], "label" => $matches[2]));
-                    $data['reservation']['count']++;
-                    if (preg_match("|<li class=[\"']?selected['\"]?|", $i))
-                        $data['reservation']['selected'] = "selected";
-                } else if (in_array( $matches[2], $reporting )) {
-                    array_push($data['reporting']['items'], array("url" => $matches[1], "label" => $matches[2]));
-                    $data['reporting']['count']++;
-                    if (preg_match("|<li class=['\"]?selected['\"]?|", $i))
-                        $data['reporting']['selected'] = "selected";
-                } else {
-                    array_push($data['management']['items'], array("url" => $matches[1], "label" => $matches[2]));
-                    $data['management']['count']++;
-                    if (preg_match("|<li class=['\"]?selected['\"]?|", $i))
-                        $data['management']['selected'] = "selected";
+    if ($authed){
+        foreach (preg_split("|</li>\s*|", getNavMenu(1, 1)) as $i) {
+            if (preg_match("|href=\"([^\"]+)\"[^>]*>([^<]+)</a>|i", $i, $matches)) {
+                if (!in_array($matches[2], $remove)) {
+                    if (in_array( $matches[2], $reservation )) {
+                        array_push($data['reservation']['items'], array("url" => $matches[1], "label" => $matches[2]));
+                        $data['reservation']['count']++;
+                        if (preg_match("|<li class=[\"']?selected['\"]?|", $i))
+                            $data['reservation']['selected'] = "selected";
+                    } else if (in_array( $matches[2], $reporting )) {
+                        array_push($data['reporting']['items'], array("url" => $matches[1], "label" => $matches[2]));
+                        $data['reporting']['count']++;
+                        if (preg_match("|<li class=['\"]?selected['\"]?|", $i))
+                            $data['reporting']['selected'] = "selected";
+                    } else {
+                        array_push($data['management']['items'], array("url" => $matches[1], "label" => $matches[2]));
+                        $data['management']['count']++;
+                        if (preg_match("|<li class=['\"]?selected['\"]?|", $i))
+                            $data['management']['selected'] = "selected";
+                    }
                 }
             }
         }
