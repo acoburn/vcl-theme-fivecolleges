@@ -17,7 +17,8 @@
 	var cookiedomain = '{{cookieDomain}}';
     usenls = false;
     var vcl = {
-        preferredSize: [{{userWidth}}, {{userHeight}}]
+        preferredSize: [{{userWidth}}, {{userHeight}}],
+        theme: '{{theme}}'
     };
   </script>
   <script type="text/javascript" src="themes/{{theme}}/js/fivecolleges.js"></script>
@@ -39,7 +40,7 @@
         <div class="navbar vcl-prefs">
           <ul class="nav pull-right">
              <li><a href="index.php?mode=userpreferences"><i class="icon-user"></i> Preferences</a></li>
-             <li><a href="{{help}}"><i class="icon-question"></i> Help</a></li>
+             <li><a href="{{help}}" class="{{helpClass}}"><i class="icon-question"></i> Help</a></li>
              <li><a href="index.php?mode=logout"><i class="icon-signout"></i> Logout</a></li>
           </ul>
         </div><br />
@@ -86,8 +87,8 @@
 {{/authed}}
 {{^authed}}
         <div class="vcl-intro navbar">
-          <ul class="nav pull-right">
-            <li><a href="{{help}}"><i class="icon-question"></i> Using the VCL</a></li>
+          <ul class="nav pull-right" style="padding-top: 10px">
+            <li><a href="{{help}}" class="{{helpClass}}"><i class="icon-info-sign"></i> Using the VCL</a></li>
           </ul>
         </div>
 {{/authed}}

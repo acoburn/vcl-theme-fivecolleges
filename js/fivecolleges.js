@@ -3,8 +3,36 @@
       reservations();
       computerTableColors();
       loginPage();
+      navigation();
   });
+
+  function require(name, cb) {
+    $.ajax({
+      url: 'themes/' + vcl.theme + '/js/' + name,
+      dataType: 'script',
+      cache: 'true',
+      success: function (data, status, xhr) {
+        if (typeof cb === "function") {
+          cb(data, status, xhr);
+        }
+      }
+    });
+  }
   
+  function navigation() {
+    $('a.vcl-help').on('click', function () {
+      $('#vcl-help').modal();
+      if(typeof(Backbone) == "undefined"){
+        require('underscore-min.js', function () {
+          require('backbone-min.js', function () {
+            require('help.js');
+          });
+        });
+      }
+      return false;
+    });
+  }
+
   function loginPage() {
     $('a.vcl-institution').hover(function () {
       $(this).find('img').removeClass('vcl-institution-nohover');

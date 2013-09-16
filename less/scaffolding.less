@@ -24,13 +24,14 @@ header {
   height: @headerHeight;
 
   h1 {
-    margin: 8px 2px 15px 2px;
+    margin: 10px 2px 5px 2px;
     padding: 10px 0 5px 40px;
     background: url(@headerImage) no-repeat left center;
 
     a {
       padding: 15px 5px;
-      color: @headerLinkColor;
+      color: #11557C;
+//      color: lighten(@black, 30%);
     }
   }
 }
@@ -54,7 +55,11 @@ footer {
     opacity: .9;
     background-image: url(@footerBackgroundImage);
     a {
-        padding-left: 20px;
+        padding: 0 10px;
+        color: #11557c;
+    }
+    a:last-child {
+        padding-right: 0;
     }
 }
 
